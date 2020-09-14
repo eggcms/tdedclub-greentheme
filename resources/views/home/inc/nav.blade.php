@@ -10,7 +10,7 @@
         <a class="nav-link hoverable" href="{{url('/')}}">ดูบอลสด</a>
         </li>
         <li class="nav-item @if($active == 'tdz') active @endif">
-            <a class="nav-link hoverable" href="{{url('/tdz')}}">ทีเด็ดเซียน</a>
+            <a class="nav-link hoverable" href="{{url('/tdedmaster')}}">ทีเด็ดเซียน</a>
         </li>
         <li class="nav-item @if($active == 'tds') active @endif">
             <a class="nav-link hoverable" href="{{url('/tds')}}">ทีเด็ดสเต็ป</a>

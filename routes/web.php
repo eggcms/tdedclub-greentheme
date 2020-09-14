@@ -24,10 +24,12 @@ Route::get('/analyzes', 'HomeController@analyzes');
 Route::get('/analyze/{blogId}', 'HomeController@analyzeItem');
 
 Route::get('/balltable', 'HomeController@balltable');
-Route::get('/tdz', 'HomeController@tdz');
+Route::get('/tdedmaster', 'HomeController@tdz');
 Route::get('/tds', 'HomeController@tds');
 
 Route::get('/hls', 'HomeController@hls');
+
+Route::post('/line-notify', 'HomeController@lineNotify');
 // Route::get('/news', function() { 
 //     return view('home.news'); 
 // });
@@ -42,9 +44,9 @@ Route::get('/live', function() {
     return view('home.live'); 
 });
 
-Route::get('/tdedmaster', function() { 
-    return view('home.tdedmaster'); 
-});
+// Route::get('/tdedmaster', function() { 
+//     return view('home.tdedmaster'); 
+// });
 
 Route::get('/tdedstep', function() { 
     return view('home.tdedstep'); 

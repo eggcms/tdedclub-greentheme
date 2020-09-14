@@ -46,30 +46,7 @@
                         <div class="col-12 col-lg-4">
                             <div class="col-form" id="formballtor">
                                 <div class="col box1">
-                                    <form name="line-notify" action="#" method="post">
-                                        <div class="inline-form">
-                                            <a href="#">
-                                                <img src="{{asset('images/logo88online.png')}}" alt="88online">
-                                            </a>
-                                            <div class="input_fullname" style="width:100%;"><i class="fas fa-user-edit"></i>
-                                                <input name="fullname" id="fullname" class="registerballtor" placeholder="ชื่อ - นามสกุล" required="" type="text">
-                                            </div>
-                                            <div class="input_mobile" style="width:100%;"><i class="fas fa-mobile"></i>
-                                                <input name="phone" id="phone" class="registerballtor" placeholder="เบอร์โทรศัพท์" maxlength="10" required="" type="text">
-                                            </div>
-                                            <div class="input_lineid" style="width:100%;"><i class="fab fa-line"></i>
-                                                <input name="lineid" id="lineid" class="registerballtor" placeholder="Line ID" required="" type="text">
-                                            </div>
-                                            <div class="submit">
-                                                <button class="btn btn-register" name="submit" type="submit">ส่งข้อมูลการสมัคร</button>
-                                            </div>
-                                            <div class="linepoto">
-                                                <a href="#">
-                                                    <img src="{{asset('images/88online.png')}}" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    @include('home.inc.register')
                                 </div>
                             </div>
                         </div>
@@ -103,7 +80,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 banner2">
-                                <a href="#"><img src="{{asset('images/bender3.jpg')}}" alt="banner2"></a>
+                                <a href="https://line.me/R/ti/p/%40792ftxvk" title="line mm88online"><img src="{{asset('images/bender3.jpg')}}" alt="banner2"></a>
                             </div>
                         </div>
                     </div>
@@ -118,7 +95,7 @@
                         <div class="col-12">
                             <div class="titleBar clearfix">
                                 <h1>ข่าวบอลประจำวัน</h1>
-                                <a href="{{url('/news')}}">ดูทั้งหมด</a>
+                                <a href="{{url('/news')}}" title="ข่าวบอลประจำวัน">ดูทั้งหมด</a>
                             </div>
                         </div>
                     </div>
@@ -134,7 +111,7 @@
                         @if(isset($hot_news))
                             <div class="col-12 col-lg-6">
                                 <div class="new1">
-                                    <a href="{{url('/news/'.$hot_news['id'])}}"><img src="{{api_img($hot_news['image'])}}" alt="">
+                                    <a href="{{url('/news/'.$hot_news['id'])}}" title="{{ $hot_news['title'] }}"><img src="{{api_img($hot_news['image'])}}" alt="">
                                         <p>{{ $hot_news['title'] }} </p>
                                     </a>
                                 </div>
@@ -145,7 +122,7 @@
                             <div class="row">
                                 @foreach($news as $n)
                                     <div class="col-6 new2">
-                                    <a href="{{url('/news/'.$n['id'])}}"><img src="{{ api_img($n['image']) }}" alt="">
+                                    <a href="{{url('/news/'.$n['id'])}}" title="{{ $n['title'] }}"><img src="{{ api_img($n['image']) }}" alt="">
                                             <p>{{ $n['title'] }}
                                             </p>
                                         </a>
@@ -155,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bender01"><a href="#"><img src="{{asset('images/bender01.gif')}}" alt=""></a></div>
+                <div class="col-12 bender01"><a href="https://www.mm88online.com" title="mm88online"><img src="{{asset('images/bender01.gif')}}" alt=""></a></div>
             </div>
         </div>
 
@@ -166,7 +143,7 @@
                         <div class="col-12">
                             <div class="titleBar clearfix">
                                 <h1>ทีเด็ดเซียน</h1>
-                                <a href="#">ดูทั้งหมด</a>
+                                <a href="{{url('/tdedmaster')}}" title="ทีเด็ดเซียน">ดูทั้งหมด</a>
                             </div>
                         </div>
                     </div>
@@ -174,7 +151,7 @@
             </div>
         </div>
 
-        <div class="col-12 texttoop">
+        <div class="col-12 texttoop small">
             <p>วิธีการดู</p>
             <p style="color: #37ff00;">W</p>
             <p>คือฟันธงชนะ</p>
@@ -232,7 +209,9 @@
                             <div class="row textdown">
                                 <div class="col analysislink text-center">
                                     @if($zft['link1'])
-                                        <a href="{{url('/analyze/'.$zft['link1'])}}"><p>บทวิเคราะห์ {{$zft['team11']}} vs {{$zft['team12']}} วันที่ {{ thai($zft['play_time'],'notshowtime') }}</p></a>
+                                        <a href="{{url('/analyze/'.$zft['link1'])}}" title="บทวิเคราะห์ {{$zft['team11']}} vs {{$zft['team12']}} วันที่ {{ thai($zft['play_time'],'notshowtime') }}">
+                                            <p>บทวิเคราะห์ {{$zft['team11']}} vs {{$zft['team12']}} วันที่ {{ thai($zft['play_time'],'notshowtime') }}</p>
+                                        </a>
                                     @endif
                                 </div>
                             </div>
@@ -294,7 +273,9 @@
                             <div class="row textdown">
                                 <div class="col analysislink text-center">
                                     @if($zft['link2'])
-                                    <a href="{{url('/analyze/'.$zft['link2'])}}"><p>บทวิเคราะห์ {{$zft['team21']}} vs {{$zft['team22']}} วันที่ {{ thai($zft['play_time'],'notshowtime') }}</p></a>
+                                    <a href="{{url('/analyze/'.$zft['link2'])}}" title="บทวิเคราะห์ {{$zft['team21']}} vs {{$zft['team22']}} วันที่ {{ thai($zft['play_time'],'notshowtime') }}">
+                                        <p>บทวิเคราะห์ {{$zft['team21']}} vs {{$zft['team22']}} วันที่ {{ thai($zft['play_time'],'notshowtime') }}</p>
+                                    </a>
                                 @endif
                                 </div>
                             </div>
@@ -354,7 +335,9 @@
                             <div class="row textdown">
                                 <div class="col analysislink text-center">
                                     @if($zft['link3'])
-                                    <a href="{{url('/analyze/'.$zft['link3'])}}"><p>บทวิเคราะห์ {{$zft['team31']}} vs {{$zft['team32']}} วันที่ {{ thai($zft['play_time'],'notshowtime') }}</p></a>
+                                    <a href="{{url('/analyze/'.$zft['link3'])}}" title="บทวิเคราะห์ {{$zft['team31']}} vs {{$zft['team32']}} วันที่ {{ thai($zft['play_time'],'notshowtime') }}">
+                                        <p>บทวิเคราะห์ {{$zft['team31']}} vs {{$zft['team32']}} วันที่ {{ thai($zft['play_time'],'notshowtime') }}</p>
+                                    </a>
                                 @endif
                                 </div>
                             </div>
