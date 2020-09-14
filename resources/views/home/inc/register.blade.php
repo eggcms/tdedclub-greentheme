@@ -1,8 +1,8 @@
 <form name="line-notify" action="line-notify" method="post" autocomplete="off">
     @csrf
     <div class="inline-form">
-        <a href="#">
-            <img src="{{asset('images/logo88online.png')}}" alt="88online">
+        <a href="https://www.mm88online.com" title="mm88online" target="_blank">
+            <img src="{{asset('images/logo88online.png')}}" alt="mm88online">
         </a>
         <div class="input_fullname" style="width:100%;"><i class="fas fa-user-edit"></i>
             <input name="fullname" id="fullname" class="registerballtor" placeholder="ชื่อ - นามสกุล" required type="text">

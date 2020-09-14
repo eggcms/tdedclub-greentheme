@@ -270,7 +270,7 @@ header {
     }
     .bghighlights { background-color: #003807; border-radius: 12px; margin-bottom: 5px;  }
     .highlights { background-color: #002104; border-radius: 12px; padding-top: 10px;
-      img { width: 100%; padding-top: 10px; padding-bottom: 10px; height: 208px; }
+      img { width: 100%; padding-top: 10px; padding-bottom: 10px; height: 208px; object-fit: cover; }
       .titleBar2 { text-align: center; background: url('../images/glowcenter.png'); background-repeat: no-repeat; margin: 10px 0; 
         background-position: center; background-size: 100%;
         a { display: inline-block; color: #fff; padding: 14px 35px 15px 46px; position: relative;

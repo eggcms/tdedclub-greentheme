@@ -88,6 +88,15 @@ class HomeController extends Controller
         ]);
     }
 
+    public function hlItem(Request $request, $blogId) {
+        $data = Http::get('https://api-88online.com/api/hl/'.$blogId)->json();
+        return view('home.highlight-item',[
+            'active'=>'hls',
+            'news'=>$data['hl']
+        ]);
+    }
+
+
     public function balltable()
     { 
         $data = Http::get('https://api-88online.com/api/balltable')->json();

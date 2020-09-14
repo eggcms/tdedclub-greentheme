@@ -3,7 +3,7 @@
       <div class="container">
           <div class="row">
               <div class="col-12 col-lg-8">
-                  <img src="{{asset('images/logotdedclub.png')}}" alt="logo tdedclub" class="logotdedclubfooter">
+                  <img src="{{asset('images/logotdedclub.png')}}" alt="tdedclub.com" class="logotdedclubfooter">
                   <div class="col-12 socialfooter">
                       <p>เป็นเว็ปไซต์ที่ให้ข้อมูลข่าวสารทางด้านกีฬา อันดับ 1 เว็บไซต์รายงาน ข่าวฟุตบอล อัพเดททุกวันตลอด 24 ชั่วโมง ตารางบอล ดูบอลสด พร้อมกับ ทีเด็ดบอล เรายังมีบทสรุปวิเคราะห์บอล ให้ ทีเด็ดบอล เป็นคลิปวิดีโอที่ช่องยูทูป ทำให้ทุกท่านสะดวกสบาย และมีเวลามากยิ่งขึ้น เพราะเหล่าเซียนบอลของเราได้รวบรวมบทสรุปไว้ให้ท่านทั้งหมดแล้วที่นี่
                           <a href="#"><img src="{{asset('images/facebook.png')}}" alt="facebook"></a>

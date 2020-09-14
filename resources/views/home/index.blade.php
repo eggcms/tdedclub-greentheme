@@ -1,5 +1,16 @@
 @extends('layouts.app')
 
+@section('title')
+tdedclub: ทีเด็ดคลับดอทคอม ศูนย์รวมทีเด็ดบอลสเต็ป ตารางราคาบอลเดี่ยว บอลสเต็ป ข่าวสารวงการกีฬา ฟุตบอล ผลบอล ฟุตบอลวันนี้ ผลฟุตบอลทั่วโลก พร้อมทั้งวิเคราะห์บอล โดยบรรดากูรู ระดับเซียนในวงการลูกหนัง
+@endsection
+@section('description')
+ทีเด็ดคลับ เว็บไซต์กีฬาระดับต้นๆของเมืองไทย ทีเด็ดบอลสเต็ป ตารางราคาบอลเดี่ยว ตารางราคาบอลสเต็ป ข่าวสารวงการกีฬา ฟุตบอล ผลบอล ฟุตบอลวันนี้ ผลฟุตบอลทั่วโลก พรีเมียร์ลีก บุนเดสลีก้า ไทยลีก เจลีก ฟุตบอลโลก ยูโร 2020 ยูฟ่าแชมเปี้ยนส์ลีก
+พร้อมทั้งวิเคราะห์บอล ฟันธง โดยบรรดากูรู ระดับเซียนในวงการลูกหนัง
+@endsection
+@section('keywords')
+ราคาบอล, ราคาบอลเดี่ยว, ราคาบอลสเต็ป, ข่าวกีฬา, ฟุตบอล, ข่าวบอล, ผลบอล, ผลบอลสด, ผลการแข่งขัน, ผลฟุตบอล, วิเคราะห์บอล, ผลบอลพรีเมียร์ลีก, ผลบอลไทยลีก, หนังสือพิมพ์กีฬา, ผลบอลล่าสุด, พรีเมียร์ลีก, กัลโช่, บุนเดสลีกา, ลา ลีกา, ยูฟ่า แชมเปี้ยนส์ ลีก, ยูโรปา ลีก, เทนนิส, กอล์ฟ, มวย, ไฮไลท์ฟุตบอล, ไทยลีก, ดิวิชั่น1, ลีกภูมิภาค, ไทยคม เอฟเอคัพ, โตโยต้าลีกคัพ
+@endsection
+
 @section('content')
 <header>
     <div class="container">
@@ -16,7 +27,7 @@
         <div class="banner1">
             <div class="row">
                 <div class="col">
-                    <a href="#"><img src="{{asset('images/mm88online.gif')}}" alt=""></a>
+                    <a href="https://www.mm88online.com" title="mm88online" target="_blank"><img src="{{asset('images/mm88online.gif')}}" alt="mm88online"></a>
                 </div>
             </div>
         </div>
@@ -80,7 +91,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 banner2">
-                                <a href="https://line.me/R/ti/p/%40792ftxvk" title="line mm88online"><img src="{{asset('images/bender3.jpg')}}" alt="banner2"></a>
+                                <a href="https://line.me/R/ti/p/%40792ftxvk" title="line mm88online" target="_blank"><img src="{{asset('images/bender3.jpg')}}" alt="banner2"></a>
                             </div>
                         </div>
                     </div>
@@ -111,8 +122,9 @@
                         @if(isset($hot_news))
                             <div class="col-12 col-lg-6">
                                 <div class="new1">
-                                    <a href="{{url('/news/'.$hot_news['id'])}}" title="{{ $hot_news['title'] }}"><img src="{{api_img($hot_news['image'])}}" alt="">
-                                        <p>{{ $hot_news['title'] }} </p>
+                                    <a href="{{url('/news/'.$hot_news['id'])}}" title="{{ $hot_news['title'] }}">
+                                        <img src="{{api_img($hot_news['image'])}}" alt="{{ $hot_news['title'] }}">
+                                        <p>{{ $hot_news['title'] }}</p>
                                     </a>
                                 </div>
                             </div>
@@ -122,9 +134,9 @@
                             <div class="row">
                                 @foreach($news as $n)
                                     <div class="col-6 pl-lg-0 new2">
-                                    <a href="{{url('/news/'.$n['id'])}}" title="{{ $n['title'] }}"><img src="{{ api_img($n['image']) }}" alt="">
-                                            <p>{{ $n['title'] }}
-                                            </p>
+                                        <a href="{{url('/news/'.$n['id'])}}" title="{{ $n['title'] }}">
+                                            <img src="{{ api_img($n['image']) }}" alt="{{ $n['title'] }}">
+                                            <p>{{ $n['title'] }}</p>
                                         </a>
                                     </div>
                                 @endforeach
@@ -132,7 +144,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bender01"><a href="https://www.mm88online.com" title="mm88online"><img src="{{asset('images/bender01.gif')}}" alt=""></a></div>
+                <div class="col-12 bender01">
+                    <a href="https://www.mm88online.com" title="mm88online">
+                        <img src="{{asset('images/bender01.gif')}}" alt="m88online">
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -305,14 +321,14 @@
         <div class="tdedwin2">
             <div class="row">
                 <div class="col-6 col-lg-3 order-2 order-lg-1">
-                    <img src="{{asset('images/tded3.gif')}}" alt="" class="tded01">
+                    <img src="{{asset('images/tded3.gif')}}" class="tded01">
                 </div>
                 <div class="col-12 col-lg-5 mobiletded order-1 order-lg-2">
                     <div class="row">
                         <div class="col">
                             <div class="row">
                                 <div class="col-4 team001">
-                                    <img src="{{ api_img($zft['vs31'])}}" alt="" class="logoteam001">
+                                    <img src="{{ api_img($zft['vs31']) }}" class="logoteam001">
                                     <div class="row">
                                         <div class="col">
                                             <p class="texttded01">{{ $zft['team31'] }}</p>
@@ -371,15 +387,16 @@
                         <div class="col-12 col-lg-8">
                             <div class="titleBar clearfix">
                                 <h1>วิเคราะห์บอล</h1>
-                                <a href="{{ url('/analyzes') }}">ดูทั้งหมด</a>
+                                <a href="{{ url('/analyzes') }}" title="วิเคราะห์บอล">ดูทั้งหมด</a>
                             </div>
                             <div class="row tdedanalysis">
-
                                 @if ($analyzes)
                                     @foreach($analyzes as $an)
                                         <div class="col-12 col-lg-6">
-                                            <a href="{{ url('/analyze/'.$an['id']) }}"><img src="{{api_img($an['image'])}}" alt="{{$an['title']}}">
-                                            <p>{{$an['title']}}</p></a>
+                                            <a href="{{ url('/analyze/'.$an['id']) }}" title="{{$an['title']}}">
+                                                <img src="{{api_img($an['image'])}}" alt="{{$an['title']}}">
+                                                <p>{{$an['title']}}</p>
+                                            </a>
                                         </div>
                                     @endforeach
                                 @endif
@@ -392,13 +409,15 @@
                                 </div>
                                 <div class="row highlights">
                                     @foreach($hls as $hl)
-                                        <div class="col-12">
-                                            <a href=""><img src="{{ api_img($hl['image']) }}" alt="{{ $hl['title'] }}"></a>
-                                        </div>                                
+                                    <div class="col-12">
+                                        <a href="{{ url('/highlight/'.$hl['id']) }}" title="ไฮไลท์ฟุตบอล: {{ $hl['title'] }}">
+                                            <img src="{{ api_img($hl['image']) }}" alt="{{ $hl['title'] }}">
+                                        </a>
+                                    </div>                                
                                     @endforeach
                                     <div class="col-12">
                                         <div class="titleBar2 clearfix">
-                                            <a href="{{url('/hls/')}}">ดูทั้งหมด</a>
+                                            <a href="{{url('/highlights/')}}" title="ไฮไลท์ฟุตบอล">ดูทั้งหมด</a>
                                         </div>
                                     </div>
                                 </div>
@@ -451,13 +470,13 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-12">
+                <div class="col-12 small">
                     <div style="width: 12px;height: 12px;background:#FF0000;display:inline-block;"></div>
-                    <p style="display:inline-block">สีแดงคือทีมต่อ</p>
+                    <p style="display:inline-block">สีแดงคือทีมต่อ </p>
                     <div style="width: 12px;height: 12px;background:#000000;display:inline-block;"></div>
-                    <p style="display:inline-block">สีดำคือทีมรอง</p>
+                    <p style="display:inline-block">สีดำคือทีมรอง </p>
                     <div style="width: 12px;height: 12px;background:#2a8b00;display:inline-block;"></div>
-                    <p style="display:inline-block">สีเขียวคือราคาบอล</p>
+                    <p style="display:inline-block">สีเขียวคือราคาบอล </p>
                 </div>
             </div>
         </div>
@@ -465,6 +484,6 @@
 </main>
 
 @include('home.inc.footer')
-    <script type='text/javascript'>document.ondragstart = function () { return false; }; </script>
+    {{-- <script type='text/javascript'>document.ondragstart = function () { return false; }; </script> --}}
 @endsection
 

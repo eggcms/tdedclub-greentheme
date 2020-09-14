@@ -27,7 +27,8 @@ Route::get('/balltable', 'HomeController@balltable');
 Route::get('/tdedmaster', 'HomeController@tdz');
 Route::get('/tds', 'HomeController@tds');
 
-Route::get('/hls', 'HomeController@hls');
+Route::get('/highlights', 'HomeController@hls');
+Route::get('/highlight/{blogId}', 'HomeController@hlItem');
 
 Route::post('/line-notify', 'HomeController@lineNotify');
 // Route::get('/news', function() { 
