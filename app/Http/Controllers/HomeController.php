@@ -84,12 +84,13 @@ class HomeController extends Controller
         //dd($data);
         return view('home.highlight',[
             'active'=>'hls',
-            'hls'=>$data['hls']
+            'news'=>$data['hls']
         ]);
     }
 
     public function hlItem(Request $request, $blogId) {
         $data = Http::get('https://api-88online.com/api/hl/'.$blogId)->json();
+
         return view('home.highlight-item',[
             'active'=>'hls',
             'news'=>$data['hl']

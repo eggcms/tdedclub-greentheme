@@ -6,42 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand col-12 col-lg-4" href="#"><img src="{{asset('images/logotdedclub.png')}}" alt="logo"></a>
-                    <div class="navbar-collapse navbarnone">
-                      <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                          <a class="nav-link hoverable" href="#">หน้าแรก<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link hoverable" href="#">ดูบอลสด</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hoverable" href="#">ทีเด็ดเซียน</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link hoverable" href="#">ทีเด็ดสเต็ป</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link hoverable" href="#">วิเคราะห์บอล</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link hoverable" href="#">โปรแกรมบอล</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link hoverable" href="#">ข่าวบอล</a>
-                          </li>
-                      </ul>
-                    </div>
-                        <div class="col-3 d-block d-lg-none menumobile"><a href="#"><p>หน้าแรก</p></a></div>
-                        <div class="col-3 d-block d-lg-none menumobile"><a href="#"><p>ดูบอลสด</p></a></div>
-                        <div class="col-3 d-block d-lg-none menumobile"><a href="#"><p>ทีเด็ดเซียน</p></a></div>
-                        <div class="col-3 d-block d-lg-none menumobile"><a href="#"><p>ทีเด็ดสเต็ป</p></a></div>
-                        <div class="col-4 col-sm-3 d-block d-lg-none menumobile"><a href="#"><p>วิเคราะห์บอล</p></a></div>
-                        <div class="col-4 col-sm-3 d-block d-lg-none menumobile"><a href="#"><p>โปรแกรมบอล</p></a></div>
-                        <div class="col-4 col-sm-3 d-block d-lg-none menumobile"><a href="#"><p>ข่าวบอล</p></a></div>
-                        <div class="col-xs-4 d-none col-sm-3 d-sm-block d-lg-none menumobile"><a href="#"><p>ไฮไลท์ฟุตบอล</p></a></div>
-                  </nav>
+                @include('home.inc.nav')
             </div>
         </div>
     </div>
@@ -50,157 +15,42 @@
 <main>
     <div class="container bg-con">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 pr-md-0">
                 <h1 class="textsubpage">ไฮไลท์ฟุตบอล</h1>
-                    <p class="borderglow"></p>
-                    <p class="titlepage">
-                        <a href="#"><i class="fas fa-home iconcolor"></i></a>
-                        <a href="#"><span>หน้าแรก</span></a>
-                        <i class="fas fa-angle-right iconcolor"></i>
-                        <span>ไฮไลท์ฟุตบอล</span>
-                    </p>
+                <p class="borderglow"></p>
+                <p class="titlepage">
+                    <a href="{{ url('/') }}"><i class="fas fa-home iconcolor"></i> <span>หน้าแรก</span></a>
+                    <i class="fas fa-angle-right iconcolor"></i>
+                    <span>ไฮไลท์ฟุตบอล</span>
+                </p>
 
                 <div class="row">
-                    <div class="col-12 col-lg-6 allnews">
-                        <a href="#"><img src="{{asset('images/highlightsball01.jpg')}}" alt="">
-                        <p class="borderglow"></p>
-                        <div class="iconborder">
-                            <i class="far fa-clock"></i>
-                            <span>xx/x/xxxx | xx:xx </span>
-                            <i class="far fa-eye"></i>
-                            <span class="pagenewsview">xx</span>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-6 allnews">
-                        <a href="#"><img src="{{asset('images/highlightsball01.jpg')}}" alt="">
-                        <p class="borderglow"></p>
-                        <div class="iconborder">
-                            <i class="far fa-clock"></i>
-                            <span>xx/x/xxxx | xx:xx </span>
-                            <i class="far fa-eye"></i>
-                            <span class="pagenewsview">xx</span>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6 allnews">
-                        <a href="#"><img src="{{asset('images/highlightsball01.jpg')}}" alt="">
-                        <p class="borderglow"></p>
-                        <div class="iconborder">
-                            <i class="far fa-clock"></i>
-                            <span>xx/x/xxxx | xx:xx </span>
-                            <i class="far fa-eye"></i>
-                            <span class="pagenewsview">xx</span>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6 allnews">
-                        <a href="#"><img src="{{asset('images/highlightsball01.jpg')}}" alt="">
-                        <p class="borderglow"></p>
-                        <div class="iconborder">
-                            <i class="far fa-clock"></i>
-                            <span>xx/x/xxxx | xx:xx </span>
-                            <i class="far fa-eye"></i>
-                            <span class="pagenewsview">xx</span>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6 allnews">
-                        <a href="#"><img src="{{asset('images/highlightsball01.jpg')}}" alt="">
-                        <p class="borderglow"></p>
-                        <div class="iconborder">
-                            <i class="far fa-clock"></i>
-                            <span>xx/x/xxxx | xx:xx </span>
-                            <i class="far fa-eye"></i>
-                            <span class="pagenewsview">xx</span>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6 allnews">
-                        <a href="#"><img src="{{asset('images/highlightsball01.jpg')}}" alt="">
-                        <p class="borderglow"></p>
-                        <div class="iconborder">
-                            <i class="far fa-clock"></i>
-                            <span>xx/x/xxxx | xx:xx </span>
-                            <i class="far fa-eye"></i>
-                            <span class="pagenewsview">xx</span>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6 allnews">
-                        <a href="#"><img src="{{asset('images/highlightsball01.jpg')}}" alt="">
-                        <p class="borderglow"></p>
-                        <div class="iconborder">
-                            <i class="far fa-clock"></i>
-                            <span>xx/x/xxxx | xx:xx </span>
-                            <i class="far fa-eye"></i>
-                            <span class="pagenewsview">xx</span>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6 allnews">
-                        <a href="#"><img src="{{asset('images/highlightsball01.jpg')}}" alt="">
-                        <p class="borderglow"></p>
-                        <div class="iconborder">
-                            <i class="far fa-clock"></i>
-                            <span>xx/x/xxxx | xx:xx </span>
-                            <i class="far fa-eye"></i>
-                            <span class="pagenewsview">xx</span>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <ul class="pagination">
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">หน้าถัดไป</a></li>
-                          </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-4">
-                <div id="sidear-scroll">
-                    <div class="col-12">
-                        <a href="#"><img src="{{asset('images/pro2.jpg')}}" alt="banner" class="bannerloginnews"></a>
-                    </div>
-
-                    <div class="balllogin">
-                        <div class="col-form" id="formballtor">
-                            <div class="col box1">
-                                <form name="line-notify" action="#" method="post">
-                                    <div class="inline-form">
-                                        <a href="#">
-                                            <img src="{{asset('images/logo88online.png')}}" alt="88online">
-                                        </a>
-                                        <div class="input_fullname" style="width:100%;"><i class="fas fa-user-edit"></i>
-                                            <input name="fullname" id="fullname" class="registerballtor" placeholder="ชื่อ - นามสกุล" required="" type="text">
-                                        </div>
-                                        <div class="input_mobile" style="width:100%;"><i class="fas fa-mobile"></i>
-                                            <input name="phone" id="phone" class="registerballtor" placeholder="เบอร์โทรศัพท์" maxlength="10" required="" type="text">
-                                        </div>
-                                        <div class="input_lineid" style="width:100%;"><i class="fab fa-line"></i>
-                                            <input name="lineid" id="lineid" class="registerballtor" placeholder="Line ID" required="" type="text">
-                                        </div>
-                                        <div class="submit">
-                                            <button class="btn btn-register" name="submit" type="submit">ส่งข้อมูลการสมัคร</button>
-                                        </div>
-                                        <div class="linepoto">
-                                            <a href="#">
-                                                <img src="{{asset('images/88online.png')}}" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </form>
+                    @foreach($news as $n)
+                        <div class="col-12 col-lg-6 allnews">
+                            <a href="{{url('/analyze/'.$n['id'])}}" title="{{ $n['title'] }}">
+                                <img src="{{api_img($n['image'])}}" alt="{{ $n['title'] }}">
+                                <p class="titlepagenews">{{ $n['title'] }}</p></a>
+                            <p class="borderglow"></p>
+                            <div class="iconborder">
+                                <span class="small">
+                                    <i class="far fa-clock"></i>
+                                    {{ thai($n['updated_at']) }}
+                                </span>
+                                <span class="pagenewsview small">
+                                    <i class="far fa-eye"></i>
+                                    {{ $n['visit'] }} views
+                                </span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <a href="#"><img src="{{asset('images/pro1.jpg')}}" alt="banner" class="bannerloginnews"></a>
-                    </div>
+                    @endforeach
                 </div>
             </div>
+
+
+            <div class="col-12 col-md-4 pr-md-0">
+                @include('home.inc.sidebar')
+            </div>
+        </div>
     </div>
 </main>
 

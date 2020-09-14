@@ -24,14 +24,14 @@
 <main>
     <div class="container bg-con">
         <div class="row">
-            <div class="col-md-8 pr-lg-0">
-                <h1 class="textsubpage">วิเคราะห์บอลบอล</h1>
-                    <p class="borderglow"></p>
-                    <p class="titlepage">
-                        <a href="{{ url('/') }}"><i class="fas fa-home iconcolor"></i> <span>หน้าแรก</span></a>
-                        <i class="fas fa-angle-right iconcolor"></i>
-                        <span>วิเคราะห์บอลบอล</span>
-                    </p>
+            <div class="col-md-8 pr-md-0">
+                <h1 class="textsubpage">วิเคราะห์บอล</h1>
+                <p class="borderglow"></p>
+                <p class="titlepage">
+                    <a href="{{ url('/') }}"><i class="fas fa-home iconcolor"></i> <span>หน้าแรก</span></a>
+                    <i class="fas fa-angle-right iconcolor"></i>
+                    <span>วิเคราะห์บอล</span>
+                </p>
 
                 <div class="row">
                     @foreach($news as $n)
