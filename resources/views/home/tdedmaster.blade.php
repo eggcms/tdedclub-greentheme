@@ -26,7 +26,9 @@
         <div class="banner1">
             <div class="row">
                 <div class="col">
-                    <a href="#"><img src="{{asset('images/mm88online.gif')}}" alt=""></a>
+                    <a href="https://www.mm88online.com" title="mm88online">
+                        <img src="{{asset('images/mm88online.gif')}}" alt="mm88online">
+                    </a>
                 </div>
             </div>
         </div>
@@ -36,8 +38,7 @@
                 <h1 class="textsubpage">ทีเด็ดเซียน</h1>
                 <p class="borderglow"></p>
                 <p class="titlepage">
-                    <a href="#"><i class="fas fa-home iconcolor"></i></a>
-                    <a href="#"><span>หน้าแรก</span></a>
+                    <a href="{{url('/')}}"><i class="fas fa-home iconcolor"></i> <span>หน้าแรก</span></a>
                     <i class="fas fa-angle-right iconcolor"></i>
                     <span>ทีเด็ดเซียน</span>
                 </p>
@@ -95,7 +96,9 @@
                                     <div class="row textdown">
                                         <div class="col analysislink text-center">
                                         @if($n['link1'])
-                                            <a href="{{url('/analyze/'.$n['link1'])}}"><p>บทวิเคราะห์ {{$n['team11']}} vs {{$n['team12']}} วันที่ {{ thai($n['play_time'],'notshowtime') }}</p></a>
+                                            <a href="{{url('/analyze/'.$n['link1'])}}" title="บทวิเคราะห์ {{$n['team11']}} vs {{$n['team12']}} วันที่ {{ thai($n['play_time'],'notshowtime') }}">
+                                                <p>บทวิเคราะห์ {{$n['team11']}} vs {{$n['team12']}} วันที่ {{ thai($n['play_time'],'notshowtime') }}</p>
+                                            </a>
                                         @endif
                                         </div>
                                     </div>
@@ -155,7 +158,9 @@
                                     <div class="row textdown">
                                         <div class="col analysislink text-center">
                                         @if($n['link2'])
-                                            <a href="{{ url('/analyze/'.$n['link2']) }}"><p>บทวิเคราะห์ {{$n['team21']}} vs {{$n['team22']}} วันที่ {{ thai($n['play_time'],'notshowtime') }}</p></a>
+                                            <a href="{{ url('/analyze/'.$n['link2']) }}" title="บทวิเคราะห์ {{$n['team21']}} vs {{$n['team22']}} วันที่ {{ thai($n['play_time'],'notshowtime') }}">
+                                                <p>บทวิเคราะห์ {{$n['team21']}} vs {{$n['team22']}} วันที่ {{ thai($n['play_time'],'notshowtime') }}</p>
+                                            </a>
                                         @endif
                                         </div>
                                     </div>
@@ -215,7 +220,9 @@
                                     <div class="row textdown">
                                         <div class="col analysislink text-center">
                                             @if($n['link3'])
-                                                <a href="{{ url('/analyze/'.$n['link3']) }}"><p class=" text-center">บทวิเคราะห์ {{$n['team31']}} vs {{$n['team32']}} วันที่ {{ thai($n['play_time'],'notshowtime') }}</p></a>
+                                                <a href="{{ url('/analyze/'.$n['link3']) }}" title="บทวิเคราะห์ {{$n['team31']}} vs {{$n['team32']}} วันที่ {{ thai($n['play_time'],'notshowtime') }}">
+                                                    <p class=" text-center">บทวิเคราะห์ {{$n['team31']}} vs {{$n['team32']}} วันที่ {{ thai($n['play_time'],'notshowtime') }}</p>
+                                                </a>
                                             @endif
                                         </div>       
                                     </div>
