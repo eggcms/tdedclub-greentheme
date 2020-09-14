@@ -121,7 +121,7 @@
                         <div class="col-12 col-lg-6 mobilenews">
                             <div class="row">
                                 @foreach($news as $n)
-                                    <div class="col-6 new2">
+                                    <div class="col-6 pl-lg-0 new2">
                                     <a href="{{url('/news/'.$n['id'])}}" title="{{ $n['title'] }}"><img src="{{ api_img($n['image']) }}" alt="">
                                             <p>{{ $n['title'] }}
                                             </p>
@@ -385,19 +385,21 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 bghighlights">
-                            <div class="titleBarhighlights clearfix">
-                                <h1>ไฮไลท์ฟุตบอล</h1>
-                            </div>
-                            <div class="row highlights">
-                                @foreach($hls as $hl)
+                        <div class="col pl-lg-0">
+                            <div class="col-12 col-lg-12 bghighlights">
+                                <div class="titleBarhighlights clearfix">
+                                    <h1>ไฮไลท์ฟุตบอล</h1>
+                                </div>
+                                <div class="row highlights">
+                                    @foreach($hls as $hl)
+                                        <div class="col-12">
+                                            <a href=""><img src="{{ api_img($hl['image']) }}" alt="{{ $hl['title'] }}"></a>
+                                        </div>                                
+                                    @endforeach
                                     <div class="col-12">
-                                        <a href=""><img src="{{ api_img($hl['image']) }}" alt="{{ $hl['title'] }}"></a>
-                                    </div>                                
-                                @endforeach
-                                <div class="col-12">
-                                    <div class="titleBar2 clearfix">
-                                        <a href="{{url('/hls/')}}">ดูทั้งหมด</a>
+                                        <div class="titleBar2 clearfix">
+                                            <a href="{{url('/hls/')}}">ดูทั้งหมด</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -409,10 +411,6 @@
             <div class="col p-0">
                 <div class="titleBar clearfix">
                     <h1>ราคาบอล วันนี้ {{ thai(now(),'notshowtime') }}</h1>
-                </div>
-                <div class="col-12">
-                    <div style="width: 12px;height: 12px;background:#FF0000;display:inline-block;"></div>
-                    <p style="display:inline-block">สีแดงคือทีมต่อ</p>
                 </div>
                 <div class="px-0 pb-3 pb-4 table-responsive">
                     <table class="balltable table-striped rouned" width="100%" style="background-color:#cfcfcf">
@@ -452,6 +450,14 @@
                             @endforeach
                         </tbody>
                     </table>
+                </div>
+                <div class="col-12">
+                    <div style="width: 12px;height: 12px;background:#FF0000;display:inline-block;"></div>
+                    <p style="display:inline-block">สีแดงคือทีมต่อ</p>
+                    <div style="width: 12px;height: 12px;background:#000000;display:inline-block;"></div>
+                    <p style="display:inline-block">สีดำคือทีมรอง</p>
+                    <div style="width: 12px;height: 12px;background:#2a8b00;display:inline-block;"></div>
+                    <p style="display:inline-block">สีเขียวคือราคาบอล</p>
                 </div>
             </div>
         </div>

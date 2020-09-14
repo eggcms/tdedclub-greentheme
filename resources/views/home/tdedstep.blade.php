@@ -2,7 +2,6 @@
 
 @section('content')
 <header>
-    <div class="page-header"></div>
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -15,7 +14,7 @@
 <main>
     <div class="container bg-con">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 pr-lg-0">
                 <h1 class="textsubpage">ทีเด็ดสเต็ป</h1>
                     <p class="borderglow"></p>
                     <p class="titlepage">
@@ -32,98 +31,106 @@
                     </div>
 
                     {{-- ######################################################################################## --}}
-                    <div class="col-12 col-md-6 tdedstep">
-                        <p class="step">สเต็ปชุดที่ 1</p>
-                        <a href=""><img class="img-fluid" src="{{asset('images/step-1.gif')}}" alt=""></a>
+                    <div class="col-12 col-lg-6 pr-lg-2">
+                        <div class="col tdedstep">
+                            <p class="step">สเต็ปชุดที่ 1</p>
+                            <a href=""><img class="img-fluid" src="{{asset('images/step-1.gif')}}" alt=""></a>
 
-                        <div class="texttdedstepwow">
-                            <p class="step01">{{ $bstep['team11'] ?? 'ไม่มีข้อมูล...' }}</p>
-                            <p class="borderglow2"></p>
-                            <p class="step02">{{ $bstep['price11'] ?? 'ไม่มีข้อมูล...' }}</p>
-                        </div>
+                            <div class="texttdedstepwow">
+                                <p class="step01">{{ $bstep['team11'] ?? 'ไม่มีข้อมูล...' }}</p>
+                                <p class="borderglow2"></p>
+                                <p class="step02">{{ $bstep['price11'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            </div>
 
-                        <div class="texttdedstepwow">
-                            <p class="step01">{{ $bstep['team12'] ?? 'ไม่มีข้อมูล...' }}</p>
-                            <p class="borderglow2"></p>
-                            <p class="step02">{{ $bstep['price12'] ?? 'ไม่มีข้อมูล...' }}</p>
-                        </div>
+                            <div class="texttdedstepwow">
+                                <p class="step01">{{ $bstep['team12'] ?? 'ไม่มีข้อมูล...' }}</p>
+                                <p class="borderglow2"></p>
+                                <p class="step02">{{ $bstep['price12'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            </div>
 
-                        <div class="texttdedstepwow">
-                            <p class="step01">{{ $bstep['team13'] ?? 'ไม่มีข้อมูล...' }}</p>
-                            <p class="borderglow2"></p>
-                            <p class="step02">{{ $bstep['price13'] ?? 'ไม่มีข้อมูล...' }}</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 tdedstep1">
-                        <p class="step">สเต็ปชุดที่ 2</p>
-                        <a href=""><img class="img-fluid" src="{{asset('images/step-2.gif')}}" alt=""></a>
-
-                        <div class="texttdedstepwow">
-                            <p class="step01">{{ $bstep['team21'] ?? 'ไม่มีข้อมูล...' }}</p>
-                            <p class="borderglow2"></p>
-                            <p class="step02">{{ $bstep['price21'] ?? 'ไม่มีข้อมูล...' }}</p>
-                        </div>
-
-                        <div class="texttdedstepwow">
-                            <p class="step01">{{ $bstep['team22'] ?? 'ไม่มีข้อมูล...' }}</p>
-                            <p class="borderglow2"></p>
-                            <p class="step02">{{ $bstep['price22'] ?? 'ไม่มีข้อมูล...' }}</p>
-                        </div>
-
-                        <div class="texttdedstepwow">
-                            <p class="step01">{{ $bstep['team23'] ?? 'ไม่มีข้อมูล...' }}</p>
-                            <p class="borderglow2"></p>
-                            <p class="step02">{{ $bstep['price23'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            <div class="texttdedstepwow">
+                                <p class="step01">{{ $bstep['team13'] ?? 'ไม่มีข้อมูล...' }}</p>
+                                <p class="borderglow2"></p>
+                                <p class="step02">{{ $bstep['price13'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 tdedstep">
-                        <p class="step">สเต็ปชุดที่ 3</p>
-                        <a href=""><img class="img-fluid" src="{{asset('images/step-3.gif')}}" alt=""></a>
+                    <div class="col-12 col-lg-6 pl-lg-2">
+                        <div class="col tdedstep1">
+                            <p class="step">สเต็ปชุดที่ 2</p>
+                            <a href=""><img class="img-fluid" src="{{asset('images/step-2.gif')}}" alt=""></a>
 
-                        <div class="texttdedstepwow">
-                            <p class="step01">{{ $bstep['team31'] ?? 'ไม่มีข้อมูล...' }}</p>
-                            <p class="borderglow2"></p>
-                            <p class="step02">{{ $bstep['price31'] ?? 'ไม่มีข้อมูล...' }}</p>
-                        </div>
+                            <div class="texttdedstepwow">
+                                <p class="step01">{{ $bstep['team21'] ?? 'ไม่มีข้อมูล...' }}</p>
+                                <p class="borderglow2"></p>
+                                <p class="step02">{{ $bstep['price21'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            </div>
 
-                        <div class="texttdedstepwow">
-                            <p class="step01">{{ $bstep['team32'] ?? 'ไม่มีข้อมูล...' }}</p>
-                            <p class="borderglow2"></p>
-                            <p class="step02">{{ $bstep['price32'] ?? 'ไม่มีข้อมูล...' }}</p>
-                        </div>
+                            <div class="texttdedstepwow">
+                                <p class="step01">{{ $bstep['team22'] ?? 'ไม่มีข้อมูล...' }}</p>
+                                <p class="borderglow2"></p>
+                                <p class="step02">{{ $bstep['price22'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            </div>
 
-                        <div class="texttdedstepwow">
-                            <p class="step01">{{ $bstep['team33'] ?? 'ไม่มีข้อมูล...' }}</p>
-                            <p class="borderglow2"></p>
-                            <p class="step02">{{ $bstep['price33'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            <div class="texttdedstepwow">
+                                <p class="step01">{{ $bstep['team23'] ?? 'ไม่มีข้อมูล...' }}</p>
+                                <p class="borderglow2"></p>
+                                <p class="step02">{{ $bstep['price23'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 tdedstep1">
-                        <p class="step">สเต็ปชุดที่ 4</p>
-                        <a href=""><img class="img-fluid" src="{{asset('images/step-4.gif')}}" alt=""></a>
+                    <div class="col-12 col-lg-6 pr-lg-2">
+                        <div class="col tdedstep">
+                            <p class="step">สเต็ปชุดที่ 3</p>
+                            <a href=""><img class="img-fluid" src="{{asset('images/step-3.gif')}}" alt=""></a>
 
-                        <div class="texttdedstepwow">
-                            <p class="step01">{{ $bstep['team41'] ?? 'ไม่มีข้อมูล...' }}</p>
-                            <p class="borderglow2"></p>
-                            <p class="step02">{{ $bstep['price41'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            <div class="texttdedstepwow">
+                                <p class="step01">{{ $bstep['team31'] ?? 'ไม่มีข้อมูล...' }}</p>
+                                <p class="borderglow2"></p>
+                                <p class="step02">{{ $bstep['price31'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            </div>
+
+                            <div class="texttdedstepwow">
+                                <p class="step01">{{ $bstep['team32'] ?? 'ไม่มีข้อมูล...' }}</p>
+                                <p class="borderglow2"></p>
+                                <p class="step02">{{ $bstep['price32'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            </div>
+
+                            <div class="texttdedstepwow">
+                                <p class="step01">{{ $bstep['team33'] ?? 'ไม่มีข้อมูล...' }}</p>
+                                <p class="borderglow2"></p>
+                                <p class="step02">{{ $bstep['price33'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pl-lg-2">
+                        <div class="col tdedstep1">
+                            <p class="step">สเต็ปชุดที่ 4</p>
+                            <a href=""><img class="img-fluid" src="{{asset('images/step-4.gif')}}" alt=""></a>
 
-                        <div class="texttdedstepwow">
-                            <p class="step01">{{ $bstep['team42'] ?? 'ไม่มีข้อมูล...' }}</p>
-                            <p class="borderglow2"></p>
-                            <p class="step02">{{ $bstep['price42'] ?? 'ไม่มีข้อมูล...' }}</p>
-                        </div>
+                            <div class="texttdedstepwow">
+                                <p class="step01">{{ $bstep['team41'] ?? 'ไม่มีข้อมูล...' }}</p>
+                                <p class="borderglow2"></p>
+                                <p class="step02">{{ $bstep['price41'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            </div>
 
-                        <div class="texttdedstepwow">
-                            <p class="step01">{{ $bstep['team43'] ?? 'ไม่มีข้อมูล...' }}</p>
-                            <p class="borderglow2"></p>
-                            <p class="step02">{{ $bstep['price43'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            <div class="texttdedstepwow">
+                                <p class="step01">{{ $bstep['team42'] ?? 'ไม่มีข้อมูล...' }}</p>
+                                <p class="borderglow2"></p>
+                                <p class="step02">{{ $bstep['price42'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            </div>
+
+                            <div class="texttdedstepwow">
+                                <p class="step01">{{ $bstep['team43'] ?? 'ไม่มีข้อมูล...' }}</p>
+                                <p class="borderglow2"></p>
+                                <p class="step02">{{ $bstep['price43'] ?? 'ไม่มีข้อมูล...' }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 pr-lg-0">
                 <div id="sidear-scroll">
                     <div class="col-12">
                         <a href="#"><img src="{{asset('images/pro1.jpg')}}" alt="banner" class="bannerloginnews"></a>

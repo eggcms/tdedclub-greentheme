@@ -12,6 +12,9 @@ body {
 .texttoop p {
   display: inline-block; }
 
+.youtube001 {
+  padding-top: 4px; }
+
 .balltable thead th {
   border-bottom: 1px solid #01cc01;
   padding: 10px 0;
@@ -28,7 +31,7 @@ body {
   content: "";
   height: 300%;
   left: -50%;
-  opacity: 0.15;
+  opacity: 0.18;
   position: fixed;
   top: -110%;
   width: 300%; }
@@ -174,7 +177,8 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%; }
+  width: 100%;
+  height: 200px; }
 
 .newslayout .bender01 img {
   width: 100%; }
@@ -207,7 +211,7 @@ header {
 .newslayout .new2 p {
   overflow: hidden;
   font-size: 0.9em;
-  height: 55px;
+  height: 47px;
   padding-top: 5px; }
 
 .tdedwin1 {
@@ -418,7 +422,7 @@ header {
 .tded .bghighlights {
   background-color: #003807;
   border-radius: 12px;
-  margin-bottom: 36px; }
+  margin-bottom: 5px; }
 .tded .highlights {
   background-color: #002104;
   border-radius: 12px;
@@ -426,13 +430,15 @@ header {
   .tded .highlights img {
     width: 100%;
     padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    height: 208px; }
   .tded .highlights .titleBar2 {
     text-align: center;
     background: url("../images/glowcenter.png");
     background-repeat: no-repeat;
     margin: 10px 0;
-    background-position: center; }
+    background-position: center;
+    background-size: 100%; }
     .tded .highlights .titleBar2 a {
       display: inline-block;
       color: #fff;
@@ -447,7 +453,7 @@ header {
   background-repeat: repeat-x;
   margin: 10px 0;
   background-position: center;
-  background-size: 358px; }
+  background-size: 100%; }
   .titleBarhighlights h1 {
     display: inline-block;
     background: #003807;
@@ -669,7 +675,9 @@ header {
   background: linear-gradient(-90deg, #072500 0%, #053609 40%, #004f0a 100%);
   margin-top: 10px;
   margin-bottom: 10px;
-  box-shadow: 0px 0px 35px -3px #265000; }
+  box-shadow: 0px 0px 35px -3px #265000;
+  padding-top: 2px;
+  padding-bottom: 2px; }
   .tdedstep .step {
     margin-top: 10px;
     text-align: center;
@@ -702,7 +710,9 @@ header {
   background: linear-gradient(-90deg, #072500 0%, #053609 40%, #004f0a 100%);
   margin-top: 10px;
   margin-bottom: 10px;
-  box-shadow: 0px 0px 35px -3px #265000; }
+  box-shadow: 0px 0px 35px -3px #265000;
+  padding-top: 2px;
+  padding-bottom: 2px; }
   .tdedstep1 .step {
     margin-top: 10px;
     text-align: center;
@@ -758,7 +768,8 @@ header {
     margin-bottom: 10px; }
 
   .titleBar h1 {
-    font-size: 1em; }
+    font-size: 1em;
+    padding: 17px 30px 12px 10px; }
 
   .ball #formballtor {
     margin-top: 20px;
@@ -838,7 +849,7 @@ header {
       background-repeat: no-repeat;
       margin: 10px 0;
       background-position: center;
-      background-size: 456px; }
+      background-size: 100%; }
       .tded .highlights .titleBar2 a {
         display: inline-block;
         color: #fff;
@@ -853,11 +864,12 @@ header {
     background-repeat: repeat-x;
     margin: 10px 0;
     background-position: center;
-    background-size: 480px; }
+    background-size: 120%;
+    background-position-x: -55px; }
     .titleBarhighlights h1 {
       display: inline-block;
-      font-size: 1.5em;
-      padding: 12px 1px 12px 10px;
+      font-size: 1em;
+      padding: 13px 1px 9px 10px;
       position: relative;
       margin-bottom: 0; }
 
@@ -1083,7 +1095,7 @@ header {
       background-repeat: no-repeat;
       margin: 10px 0;
       background-position: center;
-      background-size: 506px; }
+      background-size: 100%; }
       .tded .highlights .titleBar2 a {
         display: inline-block;
         color: #fff;
@@ -1177,7 +1189,7 @@ header {
     background-repeat: repeat-x;
     margin: 10px 0;
     background-position: center;
-    background-size: 532px; }
+    background-size: 100%; }
     .titleBarhighlights h1 {
       display: inline-block;
       font-size: 1.5em;

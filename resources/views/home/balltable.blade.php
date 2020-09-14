@@ -24,7 +24,7 @@
 <main>
     <div class="container bg-con">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 pr-lg-0">
                 <h1 class="textsubpage">โปรแกรมบอล วันนี้ {{ thai(now(),'notshowtime') }}</h1>
                     <p class="borderglow"></p>
                     <p class="titlepage">
@@ -35,10 +35,6 @@
                     </p>
                 <div class="row">
                     <div class="col">
-                        <div class="col-12 mt-0">
-                            <div style="width: 12px;height: 12px;background:#FF0000;display:inline-block;"></div>
-                            <p style="display:inline-block">สีแดงคือทีมต่อ</p>
-                        </div>
                         <div class="px-0 pb-3 pb-4 table-responsive">
                             <table class="balltable table-striped rouned" width="100%" style="background-color:#cfcfcf">
                                 <thead>
@@ -79,10 +75,18 @@
                             </table>
                         </div>
                     </div>
+                    <div class="col-12">
+                        <div style="width: 12px;height: 12px;background:#FF0000;display:inline-block;"></div>
+                        <p style="display:inline-block">สีแดงคือทีมต่อ</p>
+                        <div style="width: 12px;height: 12px;background:#000000;display:inline-block;"></div>
+                        <p style="display:inline-block">สีดำคือทีมรอง</p>
+                        <div style="width: 12px;height: 12px;background:#2a8b00;display:inline-block;"></div>
+                        <p style="display:inline-block">สีเขียวคือราคาบอล</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 pr-lg-0">
                 <div id="sidear-scroll">
                     <div class="col-12">
                         <a href="#"><img src="{{asset('images/pro.jpg')}}" alt="banner" class="bannerloginnews"></a>

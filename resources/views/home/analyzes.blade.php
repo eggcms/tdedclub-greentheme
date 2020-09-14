@@ -24,7 +24,7 @@
 <main>
     <div class="container bg-con">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 pr-lg-0">
                 <h1 class="textsubpage">วิเคราะห์บอลบอล</h1>
                     <p class="borderglow"></p>
                     <p class="titlepage">
@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 pr-lg-0">
                 <div id="sidear-scroll">
                     <div class="col-12">
                         <a href="#"><img src="{{asset('images/pro.jpg')}}" alt="banner" class="bannerloginnews"></a>

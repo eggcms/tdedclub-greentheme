@@ -7,6 +7,8 @@ body{ font-family: kanit; background-color: black; ; color: #ffffff; font-size: 
   p { display: inline-block; }
 }
 
+.youtube001 { padding-top: 4px; }
+
 .balltable {
   thead {
     th { border-bottom:1px solid #01cc01; padding:10px 0; color:#FFFFFF; font-size: large; background-color: #093300; }
@@ -19,7 +21,7 @@ body{ font-family: kanit; background-color: black; ; color: #ffffff; font-size: 
   content: "";
   height: 300%;
   left: -50%;
-  opacity: 0.15;
+  opacity: 0.18;
   position: fixed;
   top: -110%;
   width: 300%;
@@ -116,6 +118,7 @@ header {
       margin-left: auto;
       margin-right: auto;
       width: 100%;
+      height: 200px;
     }
   }
 
@@ -133,7 +136,7 @@ header {
     img { width: 100%;}
     a { text-decoration: none; color: #dadada;
       &:hover { color: #00ff22; } }
-    p { overflow: hidden; font-size: 0.9em; height: 55px; padding-top: 5px;
+    p { overflow: hidden; font-size: 0.9em; height: 47px; padding-top: 5px;
     }
   }
 }
@@ -265,11 +268,11 @@ header {
           &:hover { color: #00ff22; } }
       img { width: 100%; }
     }
-    .bghighlights { background-color: #003807; border-radius: 12px; margin-bottom: 36px;  }
+    .bghighlights { background-color: #003807; border-radius: 12px; margin-bottom: 5px;  }
     .highlights { background-color: #002104; border-radius: 12px; padding-top: 10px;
-      img { width: 100%; padding-top: 10px; padding-bottom: 10px; }
+      img { width: 100%; padding-top: 10px; padding-bottom: 10px; height: 208px; }
       .titleBar2 { text-align: center; background: url('../images/glowcenter.png'); background-repeat: no-repeat; margin: 10px 0; 
-        background-position: center;
+        background-position: center; background-size: 100%;
         a { display: inline-block; color: #fff; padding: 14px 35px 15px 46px; position: relative;
           text-decoration: none;
           &:hover { color: #00ff22; }  
@@ -278,7 +281,7 @@ header {
     }
   }
 
-  .titleBarhighlights { background: url('../images/glowhighlights.png'); background-repeat: repeat-x; margin: 10px 0; background-position: center; background-size: 358px;
+  .titleBarhighlights { background: url('../images/glowhighlights.png'); background-repeat: repeat-x; margin: 10px 0; background-position: center; background-size: 100%;
     h1 { display: inline-block; background: #003807; font-size: 1.5em; padding: 12px 1px 12px 10px; position: relative; margin-bottom: 0;
   } 
 }
@@ -493,6 +496,8 @@ header {
   background: linear-gradient(-90deg, rgba(7,37,0,1) 0%, rgba(5,54,9,1) 40%, rgba(0,79,10,1) 100%);
   margin-top: 10px; margin-bottom: 10px;
   box-shadow: 0px 0px 35px -3px #265000;
+  padding-top: 2px;
+  padding-bottom: 2px;
   .step {
     margin-top: 10px;
     text-align: center;
@@ -531,6 +536,8 @@ header {
   background: linear-gradient(-90deg, rgba(7,37,0,1) 0%, rgba(5,54,9,1) 40%, rgba(0,79,10,1) 100%);
   margin-top: 10px; margin-bottom: 10px;
   box-shadow: 0px 0px 35px -3px #265000;
+  padding-top: 2px;
+  padding-bottom: 2px;
   .step {
     margin-top: 10px;
     text-align: center;
@@ -589,7 +596,7 @@ header {
   .bannerloginnews { margin-bottom: 10px; }
 
   .titleBar { 
-   h1 { font-size: 1em; }
+   h1 { font-size: 1em; padding: 17px 30px 12px 10px; }
   }
 
   .ball { 
@@ -632,7 +639,7 @@ header {
     .highlights { border-radius: 12px; padding-top: 10px;
       img { width: 100%; padding-top: 10px; padding-bottom: 10px; }
       .titleBar2 { text-align: center; background: url('../images/glowcenter.png'); background-repeat: no-repeat; margin: 10px 0; 
-        background-position: center; background-size: 456px;
+        background-position: center; background-size: 100%;
         a { display: inline-block; color: #fff; padding: 14px 35px 15px 46px; position: relative;
           text-decoration: none;
           &:hover { color: #00ff22; }  
@@ -642,8 +649,8 @@ header {
   }
 
 
-  .titleBarhighlights { background: url('../images/glowhighlights.png'); background-repeat: repeat-x; margin: 10px 0; background-position: center; background-size: 480px;
-    h1 { display: inline-block; font-size: 1.5em; padding: 12px 1px 12px 10px; position: relative; margin-bottom: 0;
+  .titleBarhighlights { background: url('../images/glowhighlights.png'); background-repeat: repeat-x; margin: 10px 0; background-position: center; background-size: 120%; background-position-x: -55px;
+    h1 { display: inline-block; font-size: 1em; padding: 13px 1px 9px 10px; position: relative; margin-bottom: 0;
   } 
 }
 
@@ -774,7 +781,7 @@ header {
     .highlights { border-radius: 12px; padding-top: 10px;
       img { width: 100%; padding-top: 10px; padding-bottom: 10px; }
       .titleBar2 { text-align: center; background: url('../images/glowcenter.png'); background-repeat: no-repeat; margin: 10px 0; 
-        background-position: center; background-size: 506px;
+        background-position: center; background-size: 100%;
         a { display: inline-block; color: #fff; padding: 14px 35px 15px 46px; position: relative;
           text-decoration: none;
           &:hover { color: #00ff22; }  
@@ -834,7 +841,7 @@ header {
     }
   }
   
-  .titleBarhighlights { background: url('../images/glowhighlights.png'); background-repeat: repeat-x; margin: 10px 0; background-position: center; background-size: 532px;
+  .titleBarhighlights { background: url('../images/glowhighlights.png'); background-repeat: repeat-x; margin: 10px 0; background-position: center; background-size: 100%;
     h1 { display: inline-block; font-size: 1.5em; padding: 12px 1px 12px 10px; position: relative; margin-bottom: 0;
   } 
 }

@@ -1,4 +1,5 @@
 <!-- Navigation -->
+<div class="page-header"></div>
 <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand col-12 col-lg-4" href="{{url('/')}}"><img src="{{asset('images/logotdedclub.png')}}" alt="logo"></a>
     <div class="navbar-collapse navbarnone">
