@@ -6,42 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand col-12 col-lg-4" href="#"><img src="{{asset('images/logotdedclub.png')}}" alt="logo"></a>
-                    <div class="navbar-collapse navbarnone">
-                      <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                          <a class="nav-link hoverable" href="#">หน้าแรก<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                          <a class="nav-link hoverable" href="#">ดูบอลสด</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hoverable" href="#">ทีเด็ดเซียน</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link hoverable" href="#">ทีเด็ดสเต็ป</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link hoverable" href="#">วิเคราะห์บอล</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link hoverable" href="#">โปรแกรมบอล</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link hoverable" href="#">ข่าวบอล</a>
-                          </li>
-                      </ul>
-                    </div>
-                        <div class="col-3 d-block d-lg-none menumobile"><a href="#"><p>หน้าแรก</p></a></div>
-                        <div class="col-3 d-block d-lg-none menumobile"><a href="#"><p>ดูบอลสด</p></a></div>
-                        <div class="col-3 d-block d-lg-none menumobile"><a href="#"><p>ทีเด็ดเซียน</p></a></div>
-                        <div class="col-3 d-block d-lg-none menumobile"><a href="#"><p>ทีเด็ดสเต็ป</p></a></div>
-                        <div class="col-4 col-sm-3 d-block d-lg-none menumobile"><a href="#"><p>วิเคราะห์บอล</p></a></div>
-                        <div class="col-4 col-sm-3 d-block d-lg-none menumobile"><a href="#"><p>โปรแกรมบอล</p></a></div>
-                        <div class="col-4 col-sm-3 d-block d-lg-none menumobile"><a href="#"><p>ข่าวบอล</p></a></div>
-                        <div class="col-xs-4 d-none col-sm-3 d-sm-block d-lg-none menumobile"><a href="#"><p>ไฮไลท์ฟุตบอล</p></a></div>
-                  </nav>
+                @include('home.inc.nav')
             </div>
         </div>
     </div>
@@ -59,6 +24,28 @@
                     <i class="fas fa-angle-right iconcolor"></i>
                     <span>ดูบอลออนไลน์ฟรี</span>
                 </p>
+
+                <div class="col-12 my-2">
+                    <div id="livePlayer"></div>
+                </div>
+                <div>
+                    @php
+                    $dir = public_path('images/channel/*.png');
+                    $images = glob($dir);
+        
+                    foreach($images as $image) {
+                        $total = explode("channel/",$image);
+                        $name=explode(".",$total[1]);
+                        echo "
+                            <div class='col-3 col-sm-2 col-lg-2 col-xl-1 mb-2'>
+                                <a href='#'".$name[0]."' onclick='return changeChannel(\"".$name[0]."\");'>
+                                    <img src='images/channel/".$name[0].".png' class='img-fluid'>
+                                </a>
+                            </div>";
+                        }
+        
+                    @endphp                    
+                </div>
             </div>
         </div>
     </div>

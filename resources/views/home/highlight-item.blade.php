@@ -42,6 +42,7 @@
                     <div class="col-12">
                         <div class="pb-5">
                             <h1 style="color:#1beb00;font-weight: bold">{{$news['title']}}</h1>
+                            <i class="fas fa-edit text-warning"></i> <i class="small">โพส์ตเมื่อ {{ thai($news['created_at']) }}</i>
                             <div class="py-3">
                                 <img src="{{ api_img($news['image']) }}" alt="{{$news['title']}}" width="100%" />
                             </div>

@@ -25,7 +25,7 @@ Route::get('/analyze/{blogId}', 'HomeController@analyzeItem');
 
 Route::get('/balltable', 'HomeController@balltable');
 Route::get('/tdedmaster', 'HomeController@tdz');
-Route::get('/tds', 'HomeController@tds');
+Route::get('/tdedstep', 'HomeController@tds');
 
 Route::get('/highlights', 'HomeController@hls');
 Route::get('/highlight/{blogId}', 'HomeController@hlItem');
@@ -49,20 +49,20 @@ Route::get('/live', function() {
 //     return view('home.tdedmaster'); 
 // });
 
-Route::get('/tdedstep', function() { 
-    return view('home.tdedstep'); 
-});
+// Route::get('/tdedstep', function() { 
+//     return view('home.tdedstep'); 
+// });
 
-Route::get('/analysis', function() { 
-    return view('home.analysis'); 
-});
+// Route::get('/analysis', function() { 
+//     return view('home.analysis'); 
+// });
 
-Route::get('/scoreball', function() { 
-    return view('home.scoreball'); 
-});
+// Route::get('/scoreball', function() { 
+//     return view('home.scoreball'); 
+// });
 
 
 
-Route::get('/highlight', function() {
-    return view('home.highlight');
-});
+// Route::get('/highlight', function() {
+//     return view('home.highlight');
+// });

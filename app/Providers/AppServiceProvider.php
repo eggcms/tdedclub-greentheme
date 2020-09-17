@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Providers;
-
+use Illuminate\Support\Carbon;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+    // $this->app->bind('path.public', function () {
+    //     return base_path('../public_html'); // Change httpdocs to public_html if you are using cpanel
+    // });
     }
 
     /**

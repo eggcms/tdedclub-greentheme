@@ -52,7 +52,11 @@ tdedclub: ทีเด็ดคลับดอทคอม ศูนย์รว
                 <div class="col">
                     <div class="row">
                         <div class="col-12 col-lg-8">
-                            <div><img src="{{asset('images/livetest.jpg')}}" alt=""></div>
+                            <div>
+                                <div id="mPlayer" class="bg-light"></div>
+                            </div>
+
+                            {{-- <div><img src="{{asset('images/livetest.jpg')}}" alt=""></div> --}}
                         </div>
                         <div class="col-12 col-lg-4">
                             <div class="col-form" id="formballtor">
